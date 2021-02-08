@@ -16,6 +16,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,6 +43,10 @@ import com.assignments.assignment5.util.JwtUtil;
 import Exceptions.AccountNotFoundException;
 import Exceptions.ExceedsCombinedBalanceLimitException;
 
+
+//@RequestMapping("/back") 
+@CrossOrigin(origins = "http://localhost:3000")
+
 @RestController
 public class MeritBankController {
 	Logger log = LoggerFactory.getLogger(this.getClass());
@@ -60,6 +65,7 @@ public class MeritBankController {
 		return meritBankService.registerUser(signUpRequest);
 	}
 
+//	@CrossOrigin(origins = "http://localhost:3000")
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAutheticationToken(@RequestBody AuthenticationRequest authenticationRequest)
 			throws Exception {

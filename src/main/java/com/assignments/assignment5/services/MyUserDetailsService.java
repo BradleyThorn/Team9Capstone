@@ -20,7 +20,7 @@ public class MyUserDetailsService implements UserDetailsService {
 	@Autowired
 	private UserRepository userRepository;
 	@Override
-	@Transactional
+//	@Transactional
 	public UserDetails loadUserByUsername(String userName) {
 		Optional<User> user = userRepository.findByUsername(userName);
 		

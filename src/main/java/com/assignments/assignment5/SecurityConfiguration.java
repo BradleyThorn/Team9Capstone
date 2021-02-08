@@ -27,10 +27,6 @@ import com.assignments.assignment5.services.MyUserDetailsService;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-//
-//	@Autowired
-//	DataSource dataSource;
-//	
 	@Autowired 
 	MyUserDetailsService myUserDetailsService;
 	@Autowired
@@ -38,16 +34,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//		auth.inMemoryAuthentication()
-//		.withUser("luis").password("coo").roles("USER").and()
-//		.withUser("lu").password("is").roles("ADMIN");
-		
-//		auth.jdbcAuthentication().dataSource(dataSource).withDefaultSchema()
-//				.withUser(User.withUsername("Luis").password("Coo").roles("USER"))
-//				.withUser(User.withUsername("admin").password("pass").roles("ADMIN"));
-		
-//		auth.jdbcAuthentication()
-//			.dataSource(dataSource);
+
 		
 		auth.userDetailsService(myUserDetailsService);
 
@@ -55,10 +42,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-//		http.authorizeRequests()
-//			.antMatchers("/admin").hasRole("ADMIN")
-//			.antMatchers("/user").hasAnyRole("USER", "ADMIN")
-//			.antMatchers("/").permitAll().and().formLogin();
+
 		http.csrf().disable()
 		.authorizeRequests().antMatchers("/authenticate").permitAll()
 		.anyRequest().authenticated()
