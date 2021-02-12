@@ -3,6 +3,7 @@ package com.meritamerica.teamnine.bankapp.controllers;
 import java.util.List;
 
 
+
 import javax.servlet.http.HttpServletRequest;
 import javax.swing.plaf.synth.Region;
 import javax.validation.Valid;
@@ -52,33 +53,7 @@ import com.meritamerica.teamnine.bankapp.models.TransferTransaction;
 import com.meritamerica.teamnine.bankapp.models.WithdrawTransaction;
 import com.meritamerica.teamnine.bankapp.services.MeritBankService;
 
-//import com.assignments.assignment7.models.AccountHolder;
-//import com.assignments.assignment7.models.AccountHoldersContactDetails;
-//import com.assignments.assignment7.models.AuthenticationRequest;
-//import com.assignments.assignment7.models.AuthenticationResponse;
-//import com.assignments.assignment7.models.BankAccount;
-//import com.assignments.assignment7.models.CDAccount;
-//import com.assignments.assignment7.models.CDOffering;
-//import com.assignments.assignment7.models.CheckingAccount;
-//import com.assignments.assignment7.models.DBAChecking;
-//import com.assignments.assignment7.models.DepositTransaction;
-//import com.assignments.assignment7.models.IRA;
-//import com.assignments.assignment7.models.RolloverIRA;
-//import com.assignments.assignment7.models.RothIRA;
-//import com.assignments.assignment7.models.SavingsAccount;
-//import com.assignments.assignment7.models.SignupRequest;
-//import com.assignments.assignment7.models.Transaction;
-//import com.assignments.assignment7.models.TransferTransaction;
-//import com.assignments.assignment7.models.WithdrawTransaction;
-//import com.assignments.assignment7.services.MeritBankService;
-//import com.assignments.assignment7.services.MyUserDetailsService;
-//import com.assignments.assignment7.util.JwtUtil;
-//
-//import Exceptions.AccountNotFoundException;
-//import Exceptions.ExceedsCombinedBalanceLimitException;
-//import Exceptions.NegativeBalanceException;
-//import Exceptions.TooManyAccountsException;
-//import Exceptions.TransactionFailureException;
+
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.Authorization;
 

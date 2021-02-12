@@ -8,8 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.meritamerica.teamnine.bankapp.models.Transaction;
 import com.meritamerica.teamnine.bankapp.models.WithdrawTransaction;
 
-//import com.assignments.assignment7.models.Transaction;
-//import com.assignments.assignment7.models.WithdrawTransaction;
+
 
 public interface WithdrawTransactionRepository extends JpaRepository<WithdrawTransaction, Integer>{
 

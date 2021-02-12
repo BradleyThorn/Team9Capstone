@@ -3,6 +3,7 @@ package com.meritamerica.teamnine.bankapp.flters;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
+
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,9 +13,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.meritamerica.teamnine.bankapp.services.MyUserDetailsService;
 import com.meritamerica.teamnine.bankapp.util.JwtUtil;
-
-//import com.assignments.assignment7.services.MyUserDetailsService;
-//import com.assignments.assignment7.util.JwtUtil;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;

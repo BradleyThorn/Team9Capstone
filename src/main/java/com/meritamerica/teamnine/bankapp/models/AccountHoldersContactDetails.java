@@ -1,6 +1,7 @@
 package com.meritamerica.teamnine.bankapp.models;
 
 import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

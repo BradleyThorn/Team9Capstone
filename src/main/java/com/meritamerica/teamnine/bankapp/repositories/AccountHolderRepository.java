@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.meritamerica.teamnine.bankapp.models.AccountHolder;
 
-//import com.assignments.assignment7.models.AccountHolder;
 
 public interface AccountHolderRepository extends JpaRepository<AccountHolder, Integer>{
 

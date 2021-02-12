@@ -9,8 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.meritamerica.teamnine.bankapp.models.ERole;
 import com.meritamerica.teamnine.bankapp.models.Role;
 
-//import com.assignments.assignment7.models.ERole;
-//import com.assignments.assignment7.models.Role;
+
 
 @Repository
 public interface RoleRepository extends JpaRepository<Role, Integer>{

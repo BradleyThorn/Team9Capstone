@@ -1,6 +1,7 @@
 package com.meritamerica.teamnine.bankapp.models;
 
 import java.time.LocalDate;
+
 import java.util.*;
 
 import javax.persistence.CascadeType;
